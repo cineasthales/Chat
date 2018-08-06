@@ -1,0 +1,287 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;    
+}
+
+body {
+    font-family: sans-serif;
+    background-color: darkcyan;
+}
+
+#tudo {    
+    width: 50%;
+    margin: 0 auto;
+    border-left: 0.1em solid black;
+    border-right: 0.1em solid black;
+    background-color: white;
+}
+
+header {
+    border-top: 0.1em solid black;
+    border-bottom: 0.1em solid black;
+    background-color: lightseagreen;
+    color: white;
+}
+
+header a, header a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover, header a:active {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    border-bottom: 0.1em solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: darkcyan;
+}
+
+h1 {
+    padding: 1em;
+    margin: 0;
+}
+
+h2, h3, h4 {
+    padding: 0.5em;
+    margin: 0;
+    text-align: center;
+}
+
+#meiologin {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#logemail, #logsenha {
+    width: 100%;
+    display: block;    
+    padding: 0.5em;
+    margin: 0 auto;
+    border: 0.1em solid black;   
+    border-radius: 0;
+}
+
+#entrar {
+    width: 50%;
+    display: block;    
+    padding: 1.5em;    
+    margin: 0 auto;
+    border: 0.1em solid black;   
+    border-radius: 0;    
+    background-color: lightseagreen;
+    color: white;
+    font-weight: bold;
+}
+
+#sessionuser {
+    color: darkcyan;
+}
+
+#friendslist {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 50%;
+}
+
+#friendslist li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#friendslist li a:hover {
+    background-color: darkcyan;
+}
+
+#scrollchat {
+    overflow-y: scroll;
+    height: 20em;
+    padding: 1em 2em 1em 2em;
+    width: 65%;
+    display: inline-block;
+    float: left;
+    border-right: 0.1em solid black;
+}
+
+#janelachat {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#janelachat ul, #janelaarq ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#janelachat ul li, #janelaarq ul li{
+    padding: 0.5em;    
+}
+
+#janelachat ul li a, #janelachat ul li a:visited,
+#janelaarq ul li a, #janelaarq ul li a:visited {
+    border: 0.1em solid black;
+    text-decoration: none;
+    padding: 0.25em;
+    color: black;
+    text-align: right;
+}
+
+#janelachat ul li a:hover, #janelachat ul li a:active,
+#janelaarq ul li a:hover, #janelaarq ul li a:active
+{
+    border: 0.1em solid black;
+    background-color: darkcyan;
+    color: white;
+    text-align: right;
+}
+
+#scrollarq {
+    overflow-y: scroll;
+    height: 20em;
+    padding: 1em;
+    width: 35%;
+    display: inline-block;
+    float: left;
+}
+
+#janelaarq {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#formchat {
+    background-color: black;
+    float: left;
+    width: 100%;
+    padding: 1em;
+}
+
+#mensagem {
+    width: 70%;
+    display: inline-block;
+    float: left;
+    padding: 0.5em;
+}
+
+#btmsg {
+    width: 20%;
+    display: inline-block;
+    float: right;
+    padding: 0.5em;
+}
+
+#formarq {
+    background-color: black;
+    color: white;
+    float: left;
+    width: 100%;
+    padding: 1em;
+}
+
+#arquivo {
+    width: 70%;
+    display: inline-block;
+    float: left;
+    padding: 0.5em;
+}
+
+#btarq {
+    width: 20%;
+    display: inline-block;
+    float: right;
+    padding: 0.5em;
+}
+
+#titlechat, #titlearq {
+    width: 35%;
+    display: inline-block;
+    float: left;    
+    border-bottom: 0.1em solid black;
+}
+
+#titlechat {
+    width: 65%;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table, tr, td, th {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    padding: 0.5em;
+}
+
+footer {
+    border-top: 0.1em solid black;
+    border-bottom: 0.1em solid black;
+    padding: 1.5em;
+    font-size: 0.75em;
+    clear: both;
+    text-align: center;
+    background-color: lightseagreen;
+    color: white;
+}
+
+@media all and (max-width: 1279px) {
+    #tudo {    
+        width: 100%;
+        margin: 0;
+    }
+    
+    #entrar {
+        width: 100%;
+    }
+    
+/*    #janelachat {
+        width: 100%;
+        border: 0;
+        border-bottom: 0.1em solid black;
+    }
+    
+    #janelaarq {
+        width: 100%;
+    }*/
+    
+    #friendslist {
+        width: 100%;
+    }
+    
+}
